@@ -1,0 +1,11 @@
+<h1 class="header__logo" routerLink="/">
+  Photography
+</h1>
+
+<nav class="header__navigation">
+  <a routerLink="photos">Photos</a>
+  <a routerLink="about">About</a>
+  <a *ngIf="!(currentUser$ | async)" routerLink="login">Login</a>
+  <a *ngIf="currentUser$ | async" routerLink="workspace">Workspace</a>
+  <a *ngIf="currentUser$ | async" (click)="tryToLogout()">Logout</a>
+</nav>

@@ -1,0 +1,19 @@
+:host {
+  h2 {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    letter-spacing: 24px;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 2em;
+    margin-bottom: 30px;
+  }
+
+  app-photo {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,19 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  place-items: center start;
+  padding: 30px 60px;
+  margin:0 auto;
+  cursor: pointer;
+
+  .header__navigation {
+    display: flex;
+    gap: 60px;
+    text-transform: uppercase;
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
