@@ -1,10 +1,10 @@
 using FluentValidation;
 using MediatR;
+using Photography.Api.Core;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Photography.Api.Core;
 
 namespace Photography.Api.Behaviors
 {
@@ -32,7 +32,7 @@ namespace Photography.Api.Behaviors
 
                 foreach (var failure in failures)
                 {
-                    response.ValidationErrors.Add(failure.ErrorMessage);
+                    response.Errors.Add(failure.ErrorMessage);
                 }
 
                 return response;

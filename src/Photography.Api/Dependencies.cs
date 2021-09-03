@@ -30,8 +30,8 @@ namespace Photography.Api
                 {
                     Version = "v1",
                     Title = "Photography",
-                    Description = "Photography: Example Api",
-                    TermsOfService = new Uri("https://example.com/terms"),
+                    Description = "Photography Sample App",
+                    TermsOfService = new Uri("https://photography.quinntynebrown.com/terms"),
                     Contact = new OpenApiContact
                     {
                         Name = "Quinntyne Brown",
